@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Next Generation Technology Assistance</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            padding: 40px; /* Increased padding for larger sections */
+        }
+        .content {
+            flex: 1;
+            padding: 40px; /* Increased padding for larger content */
+        }
+        .image {
+            flex: 1;
+        }
+        .image img {
+            max-width: 100%; /* Make the image size adjustable */
+            height: auto;
+            width: 100%; /* Make the image take the full width of its container */
+        }
+        .about-us {
+            text-align: center; /* Center-align the content */
+            background-color: white;
+            padding: 40px; /* Increased padding for the section */
+        }
+        .about-us h2 {
+            font-size: 40px; /* Larger font size */
+            margin: 0;
+            font-weight: bold; /* Make the font bold */
+            color: #1e1e14; /* Change font color to blue */
+            margin-bottom: 20px; /* Added space after the heading */
+        }
+        .about-us p {
+            font-size: 24px; /* Larger font size */
+            color: #333; /* Darken font color */
+            margin-bottom: 30px; /* Added space after each paragraph */
+        }
+        .satisfaction-guaranteed {
+            text-align: center; /* Center-align the content */
+            background-color: #007BFF; /* Blue background color */
+            color: #fff; /* White text color */
+            padding: 40px; /* Increased padding for the section */
+        }
+        .satisfaction-guaranteed h2 {
+            font-size: 36px; /* Larger font size */
+            margin: 0;
+            font-weight: bold; /* Make the font bold */
+            margin-bottom: 20px; /* Added space after the heading */
+        }
+        .satisfaction-guaranteed p {
+            font-size: 24px; /* Larger font size */
+            margin-bottom: 30px; /* Added space after each paragraph */
+        }
+        .section-button {
+            text-align: center;
+            margin: 30px 0; /* Increased margin for more space */
+        }
+        .section-button a {
+            background: #007BFF;
+            color: #fff;
+            display: inline-block;
+            padding: 15px 30px; /* Larger button size */
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .section-button a:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="section">
+        <div class="image">
+            <img src="{% static 'img/Screenshot 2023-10-15 182600.png' %}" alt="Your Image Description">
+        </div>
+        <div class="content">
+            <h1>Welcome to Next Generation Technology Assistance</h1>
+            <p>We make technology accessible!</p>
+            <a href="{% url 'services' %}" class="contact-button" style="font-weight: bold;">Services</a>
+        </div>
+    </div>
+
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p><strong>Technical Experience</strong></p>
+        <p>Welcome to S3Gen Technologies, the premier destination for website development, test automation frameworks, consulting services, and comprehensive technical assistance. We are dedicated to empowering businesses with cutting-edge technology solutions and providing exceptional DevOps and infrastructure support to help you thrive in the digital landscape.</p>
+        <p><strong>High ROI</strong></p>
+        <p>Do you spend most of your IT budget on maintaining your current system? Many companies find that constant maintenance eats into their budget for new technology. By outsourcing your IT management to S3Gen Technologies, you can focus on what you do best--running your business.</p>
+        <div class="section-button">
+            <a href="/about">Learn More</a>
+        </div>
+    </div>
+
+    <div class="satisfaction-guaranteed" style="background-color:gray;">
+        <h2>Satisfaction Guaranteed</h2>
+        <p>Experience the power of transformative technology and expert support with S3Gen Technologies. Contact us today to discuss your requirements and embark on a journey towards digital success.</p>
+        <div class="section-button">
+            <a href="{% url 'contact_us' %}">Contact Us</a>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>
+

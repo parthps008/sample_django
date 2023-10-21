@@ -1,0 +1,11 @@
+<nav style="background-color: #333; padding: 10px;">
+   
+    <ul style="list-style-type: none; padding: 0; display: flex; justify-content: space-around;">
+        <li><img src="/static/img/Screenshot 2023-10-15 182600.png" alt="Your Image" style="max-height: 30px; margin-right: 10px;"></li>
+        
+        <li><a style="color: white; text-decoration: none;" href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+        <li><a style="color: white; text-decoration: none;" href="{% url 'about_us' %}"><i class="fa fa-info-circle"></i> About</a></li>
+        <li><a style="color: white; text-decoration: none;" href="{% url 'services' %}"><i class="fa fa-cogs"></i> Services</a></li>
+        <li><a style="color: white; text-decoration: none;" href="{% url 'contact_us' %}"><i class="fa fa-envelope"></i> Contact Us</a></li>
+    </ul>
+</nav>

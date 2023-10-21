@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services - S3GenTech</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    background-image: url('{% static "img/data-technology-blue-background-with-hacker-remixed-media.jpg" %}');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+
+        h1 {
+            color: #f9f4f4;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .services-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            margin: 10px;
+            width: calc(33.33% - 20px);
+            text-align: center;
+            padding: 20px;
+            transform: translateY(0);
+            transition: transform 0.2s;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .info-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 70%;
+            margin: 10px auto;
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <h1>Our Services</h1>
+    <ul class="services-list">
+        <li class="service-item">
+            <img class="service-image" src="{% static 'img/person-front-computer-working-html.jpg' %}" alt="Service 1">
+            <h2>Website Development</h2>
+            <p>Our team of experienced developers specializes in creating high-quality, responsive, and user-friendly websites tailored to your specific requirements. From concept to deployment, we ensure your website is visually stunning, functionally robust, and optimized for performance.</p>
+            <button class="info-button">More Information</button>
+        </li>
+        <li class="service-item">
+            <img class="service-image" src="{% static 'img/3056705.jpg' %}" alt="Service 1">
+            <h2>Test Automation Frameworks</h2>
+            <p>Our custom test automation frameworks streamline the testing process, enabling faster and more efficient software development cycles. By automating repetitive testing tasks, we ensure accurate and reliable results, enhancing the quality of your software while reducing time-to-market.</p>
+            <button class="info-button">More Information</button>
+        </li>
+        <li class="service-item">
+            <img class="service-image" src="{% static 'img/happy-financial-advisor-male-doctor-shaking-hands-after-successful-meeting-office.jpg' %}" alt="Service 3">
+            <h2>Consulting Services</h2>
+            <p>Our expert consultants provide strategic guidance to help you make informed decisions and maximize the potential of your digital initiatives. Whether you need assistance with technology selection, architectural design, or overall digital strategy, we offer tailored consulting services to address your specific business needs.</p>
+            <button class="info-button">More Information</button>
+        </li>
+        <li class="service-item">
+            <img class="service-image" src="{% static 'img/technology-technical-assistance-repair-conceopt.jpg' %}" alt="Service 4">
+            <h2>Technical Assistance</h2>
+            <p>Our dedicated technical support team is here to assist you throughout the software development lifecycle. We troubleshoot issues, provide solutions, and offer guidance on best practices. From performance optimization to compatibility problems, we ensure your software runs smoothly and efficiently.</p>
+            <button class="info-button">More Information</button>
+        </li>
+        <li class="service-item">
+            <img class="service-image" src="{% static 'img/young-teacher-telling-two-students-about-corporate-budgeting.jpg' %}" alt="Service 5">
+            <h2>Tutoring</h2>
+            <p>Our seasoned tutors excel in teaching IT programming, computer science, and related STEM fields, bringing a wealth of knowledge to guide learners of all ages and abilities. Whether you're a novice or tackling a challenging concept, we're equipped to help you navigate the world of technology. We're committed to empowering you to overcome any learning obstacle with personalized instruction and our passion for education.</p>
+            <button class="info-button">More Information</button>
+        </li>
+        <li class="service-item">
+            <img class="service-image" src="{% static 'img/standard-quality-control-collage-concept.jpg' %}" alt="Service 6">
+            <h2>DevOps and Infrastructure Support</h2>
+            <p>We offer comprehensive DevOps and infrastructure support services to streamline your development and operations processes. Our experts assist in automating infrastructure provisioning, continuous integration and delivery, and monitoring and logging practices. With our support, you can achieve faster time-to-market, increased scalability, and improved overall efficiency. Our DevOps and infrastructure support services are designed to help your team focus on delivering high-quality software, minimizing downtime, and maintaining a secure and efficient infrastructure for your applications.</p>
+            <button class="info-button">More Information</button>
+        </li>
+        <!-- Add more services as needed -->
+    </ul>
+    {% include 'footer.html' %}
+</body>
+</html>

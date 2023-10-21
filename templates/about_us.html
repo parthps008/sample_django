@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us - S3GenTech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Add your CSS styling here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Your Chosen Font', Arial, sans-serif;
+            font-size: 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        h3 {
+            font-size: 20px;
+            color: #666;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .point {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .point img {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .point .description {
+            flex: 3;
+        }
+        .navbar {
+            background-color: #00070d;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            h2, h3 {
+                font-size: 20px;
+            }
+            .point {
+                flex-direction: column;
+            }
+            .point img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        {% include 'navbar.html' %}
+    </div>
+
+    <div class="container">
+        <img src="{% static 'img/Screenshot 2023-10-15 182600.png' %}" alt="Expertise and Experience">
+        <h2>Welcome to S3Gen Technologies</h2>
+        <p>The premier destination for website development, test automation frameworks, consulting services, and comprehensive technical assistance. We are dedicated to empowering businesses with cutting-edge technology solutions and providing exceptional DevOps and infrastructure support to help you thrive in the digital landscape.</p>
+        
+        <h3>Technical Experience</h3>
+        <p>Do you spend most of your IT budget on maintaining your current system? Many companies find that constant maintenance eats into their budget for new technology. By outsourcing your IT management to S3Gen Technologies, you can focus on what you do best—running your business.</p>
+    
+        <h3>Why Choose Us</h3>
+        
+        <!-- "Why Choose Us" Point 1 -->
+        <div class="point">
+            <img src="{% static 'img/about/experience-knowledge-skills-observation-meet.jpg' %}" alt="Expertise and Experience">
+            <div class="description">
+                <h4>Expertise and Experience</h4>
+                <p>Our team comprises highly skilled professionals with extensive experience in website development, test automation, consulting, and DevOps practices. We bring deep industry knowledge and a proven track record to every project we undertake.</p>
+            </div>
+        </div>
+        
+        <!-- "Why Choose Us" Point 2 -->
+        <div class="point">
+            <img src="{% static 'img/about/young-stylish-woman-striped-shirt-denim-skirt-eyeglas.jpg' %}" alt="Tailored Solutions">
+            <div class="description">
+                <h4>Tailored Solutions</h4>
+                <p>We understand that each business has unique requirements. We work closely with you to understand your goals and deliver customized solutions that align with your specific needs, ensuring maximum value for your investment.</p>
+            </div>
+        </div>
+    
+        <!-- "Why Choose Us" Point 3 -->
+        <div class="point">
+            <img src="{% static 'img/about/quality-assurance-clipboard-icon.jpg' %}" alt="Commitment to Quality">
+            <div class="description">
+                <h4>Commitment to Quality</h4>
+                <p>We are committed to delivering high-quality services that exceed your expectations. Our rigorous testing processes, attention to detail, and adherence to industry best practices ensure that our solutions are reliable, secure, and performant.</p>
+            </div>
+        </div>
+    
+        <!-- "Why Choose Us" Point 4 -->
+        <div class="point">
+            <img src="{% static 'img/about/business-people-working-together.jpg' %}" alt="Client-Centric Approach">
+            <div class="description">
+                <h4>Client-Centric Approach</h4>
+                <p>We prioritize building long-term relationships with our clients. Our client-centric approach focuses on effective communication, transparency, and delivering exceptional customer service at every step of the engagement. Your success is our success.</p>
+            </div>
+        </div>
+    
+        <!-- "Why Choose Us" Point 5 -->
+        <div class="point">
+            <img src="{% static 'img/about/happy-customer-service-representative-using-computer-having-video-call-with-clients-while-working-call-center.jpg' %}" alt="Ongoing Support">
+            <div class="description">
+                <h4>Ongoing Support</h4>
+                <p>We provide ongoing support to ensure the smooth functioning of your website or software application. Our dedicated support team is available to address any concerns, provide timely assistance, and implement updates or enhancements as needed, so you can focus on your core business.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        {% include 'footer.html' %}
+    </div>
+</body>
+</html>
